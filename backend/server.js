@@ -7,7 +7,10 @@ const expensesRouter = require("./routes/expenses");
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+const corsOptions = {
+  origin: 'https://expense-tracker-lac-two.vercel.app',
+  optionsSuccessStatus: 200 // For legacy browser support
+};
 
 mongoose.connect(
   "mongodb+srv://gundeepsinghm:nRMpOnlEH53OMA2V@cluster0.zhiocaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
