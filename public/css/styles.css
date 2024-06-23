@@ -1,0 +1,87 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#register,
+#login,
+#tracker {
+  max-width: 400px;
+  margin: 20px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+
+#auth-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#auth-options button {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #004d40;
+}
+
+#auth-options button:hover {
+  background-color: #eeeeee;
+}
+
+p {
+  text-align: center;
+  color: #d32f2f;
+  margin-top: 10px;
+}
