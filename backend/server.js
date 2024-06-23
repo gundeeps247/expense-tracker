@@ -16,13 +16,7 @@ app.use(cors({
 }));
 
 mongoose.connect(
-  "mongodb+srv://gundeepsinghm:nRMpOnlEH53OMA2V@cluster0.zhiocaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  ssl: true, // Enable SSL/TLS
-  sslValidate: true, 
-  }
+  "mongodb+srv://gundeepsinghm:nRMpOnlEH53OMA2V@cluster0.zhiocaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 );
 
 app.use("/api/auth", authRouter); // Route for authentication
