@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.deleteExpense = deleteExpense;
 });
 
-const apiUrl = "http://localhost:5000/api"; // Updated base URL
+const apiUrl = "https://expense-tracker-wjot.onrender.com/api"; // Updated base URL
 
 let chart = null; // Global variable to hold the chart instance
 
