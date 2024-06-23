@@ -9,7 +9,11 @@ const app = express();
 app.use(bodyParser.json());
 
 // Use CORS middleware to allow all origins
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow requests from all origins
+  methods: ['GET', 'POST'], // Allow methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers
+}));
 
 mongoose.connect(
   "mongodb+srv://gundeepsinghm:nRMpOnlEH53OMA2V@cluster0.zhiocaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
