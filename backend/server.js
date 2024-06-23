@@ -8,15 +8,8 @@ const expensesRouter = require("./routes/expenses");
 const app = express();
 app.use(bodyParser.json());
 
-// Define CORS options
-const corsOptions = {
-  origin: 'https://expense-tracker-lac-two.vercel.app', // Replace with your frontend URL
-  methods: ['GET', 'POST'], // Allow methods
-  allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers
-};
-
-// Use CORS middleware with options
-app.use(cors(corsOptions));
+// Use CORS middleware to allow all origins
+app.use(cors());
 
 mongoose.connect(
   "mongodb+srv://gundeepsinghm:nRMpOnlEH53OMA2V@cluster0.zhiocaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
